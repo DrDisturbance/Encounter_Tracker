@@ -1,0 +1,139 @@
+/* CSS for D&D 5e Character Sheet */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Grey background */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 130px); /* Adjust width for input fields */
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Blue button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.page-container {
+    width: 100%; /* Width of a standard piece of paper */
+    height: 100%; /* Height of a standard piece of paper */
+    margin: 0 auto; /* Center horizontally */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sheet-container {
+    background-color: #fff; /* White page */
+    width: 41em;
+    height: 56em;
+    margin-top: 2em;
+    padding: 5em;
+    border-radius: 1px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.floating-container {
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    width: 20em; /* Adjust as needed */
+    height: 60em; /* Adjust as needed */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Ensure it's above other content */
+}
+
+.floating-container.minimized {
+    width: 2em; /* Shrinking the width to 2em */
+    height: 2em;
+    border-radius: 15px;
+}
+
+
+.floating-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.floating-content {
+    padding: 10px;
+}
+
+.floating-header.minimized {
+    background-color: #f0f0f0;
+    display: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.floating-content.minimized {
+    display: none;
+}
+
+.minimize-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    border-radius: 50%; /* Make it round */
+    background-color: #f0f0f0; /* Background color */
+    border: 1px solid #ccc;
+    text-align: center;
+    color:rgb(189, 189, 189);
+    font-weight:bold;
+    line-height: 120%; /* Vertically center text */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    
+}
+
+.minimize-button:hover {
+    background-color: #ddd; /* Lighter background color on hover */
+}
