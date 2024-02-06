@@ -1,0 +1,49 @@
+<!--Players will select what character they want to play as (DMs select Campaigns in Campaign selection)!-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Circular Button Prompt</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  .circular-button {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #a0a0a0;
+    color: white;
+    border-radius: 50%;
+    line-height: 100px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+  }
+  
+  .circular-button:hover {
+    background-color: #666666;
+  }
+</style>
+</head>
+<body>
+
+<div class="button-container">
+  <a href="#" class="circular-button">New Char</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D 5e Character Sheet</title>
+    <link rel="stylesheet" href="../css/DM_Overview.css">
+</head>
+<body>
+    <!-- INITIATIVE-->
+    <div class="floating-container">
+        <div class="floating-header">
+            Initiative
+        </div>
+        <span class="minimize-button">&lt</span>
+        <div class="floating-content">
+            This is your floating content.
+        </div>
+    </div>
+
+    <!-- CHARACTER SHEET-->
+    <form id="character-sheet">
+        <div class="page-container">
+            <!-- Stats page-->
+            <div class="sheet-container" id="stats">
+                <!-- Top Bar-->
+                <div class="framework-container" id="charachter_summary">
+
+                    <div class="boxed-container" id="charachter_details">
+
+                    </div>
+                </div>
+
+                <div class="framework-container" id="ability_scores">
+                    <div class="boxed-container" class="ability_score" id="STR_box">
+
+                    </div>
+                    <div class="boxed-container" class="ability_score" id="DEX_box">
+
+                    </div>
+                    <div class="boxed-container" class="ability_score" id="CON_box">
+                        
+                    </div>
+                    <div class="boxed-container" class="ability_score" id="INT_box">
+
+                    </div>
+                    <div class="boxed-container" class="ability_score" id="WIS_box">
+
+                    </div>
+                    <div class="boxed-container" class="ability_score" id="CHA_box">
+
+                    </div>
+                </div>
+
+                <div class="framework-container" id="Inspiration_Column">
+                    <div class="boxed-container" id="Inspiration_box">
+
+                    </div>
+                    <div class="boxed-container" id="Proficiency_box">
+                        
+                    </div>
+                    <div class="boxed-container" id="saving_throw_box">
+                        
+                    </div>
+                    <div class="boxed-container" id="Skill_box">
+                        
+                    </div>
+                    
+                </div>
+
+
+
+
+
+
+                
+            </div>
+            
+            <!-- Spells Page-->
+            <div class="sheet-container" id="spell list">
+
+
+            </div>
+        </div>
+    </form>
+    
+    <script>
+        // JavaScript code to handle minimize/maximize init tracker functionality
+        const floatingContainer = document.querySelector('.floating-container');
+        const floatingHeader = document.querySelector('.floating-header');
+        const floatingContent = document.querySelector('.floating-content');
+        const minimizeButton = document.querySelector('.minimize-button');
+
+        minimizeButton.addEventListener('click', () => {
+            floatingContainer.classList.toggle('minimized');
+            floatingHeader.classList.toggle('minimized');
+            floatingContent.classList.toggle('minimized');
+            if (minimizeButton.textContent == '<') {
+                minimizeButton.textContent = '>';
+            } else {
+                minimizeButton.textContent = '<';
+            }
+        });
+    </script>
+</body>
+</html>
