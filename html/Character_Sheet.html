@@ -27,9 +27,49 @@
                 <!-- Top Bar-->
                 <div class="framework-container" id="charachter_summary">
                     <div class="framework-container" id="name_space">
-
+                        <h1 style="font-size: 1em; text-align: right; margin-right: 35px;">DUNGEONS & DRAGONS</h1>
+                        <div class ="input-field">
+                            <input type="text" id="character_name" name="character_name"style="width: 80%; margin-left: 10%; margin-right: 10%; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                            <label for="character_name" style="width: 70%; margin-left: 18%; margin-right: 12%;font-size: 11px;">CHARACHTER NAME</label>
+                        </div>
                     </div>
-                    <div class="boxed-container" id="charachter_details">
+
+                    <div class="boxed-container" id="charachter_details" style="display: flex; flex-direction: column; align-items: flex-start; max-width: 100%; overflow: hidden;">
+                        <div style=" margin: 0px; padding: 0px; height: 50%; width: 100%; display: flex; flex-direction: row; align-items: flex-start; max-width: 100%; overflow: hidden;">
+                            <!-- Top row -->
+                            <div class="input-field" style="flex-basis: 40%; padding: 0%; margin: 0%;">
+                                <input type="text" id="class_and_level" name="class_and_level" style="width: 90%; height: 12px; margin-bottom: 0px; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                <label for="class_and_level" style="font-size: 11px; margin-top: 3px;">CLASS AND LEVEL</label>
+                            </div>
+                            
+                            <div class="input-field" style="flex-basis: 30%; padding: 0%; margin: 0%; ">
+                                <input type="text" id="background" name="background" style="width: 87%; height: 12px; margin-bottom: 0px; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                <label for="background" style="font-size: 11px; margin-top: 3px;">BACKGROUND</label>
+                            </div>
+                            
+                            <div class="input-field" style="flex-basis: 30%; padding: 0%; margin: 0%;">
+                                <input type="text" id="player_name" name="player_name" style="width: 87%; height: 12px; margin-bottom: 0px; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                <label for="player_name" style="font-size: 11px; margin-top: 3px;">PLAYER NAME</label>
+                            </div>
+                        </div>
+                        
+                        <div style=" margin: 0px; padding: 0px; height: 50%; width: 100%; display: flex; flex-direction: row; align-items: flex-start; max-width: 100%; overflow: hidden;">
+                            <!-- Bottom row -->
+                            <div class="input-field" style="flex-basis: 40%;  padding: 0%; margin: 0%;">
+                                <input type="text" id="race" name="race" style="width: 90%; height: 12px; margin-bottom: 0px; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                <label for="race" style="font-size: 11px; margin-top: 3px;">RACE</label>
+                            </div>
+                            
+                            <div class="input-field" style="flex-basis: 30%;  padding: 0%; margin: 0%;">
+                                <input type="text" id="alignment" name="alignment" style="width: 87%; height: 12px; margin-bottom: 0px; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                <label for="alignment" style="font-size: 11px; margin-top: 3px;">ALIGNMENT</label>
+                            </div>
+                            
+                            <div class="input-field" style="flex-basis: 30%; padding: 0%; margin: 0%;">
+                                <input type="text" id="experience_points" name="experience_points" style="width: 87%; height: 12px; margin-bottom: 0px; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                <label for="experience_points" style="font-size: 11px; margin-top: 3px;">EXPERIENCE POINTS</label>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -40,37 +80,97 @@
                     <div class="framework-container" id="Proficiency_column">
                         <div class="framework-container" id="ability_upper_region">
                             
-                            <div class="framework-container" id="ability_scores">
+                            <div class="framework-container" id="ability_scores" style="max-width: 33%; margin-left: auto; margin-right: auto;">
                                 
-                                <div class="boxed-container" class="ability_score" id="STR_box">
-
+                                <div class="boxed-container" class="ability_score" id="STR_box" style="display: flex; flex-direction: column; align-items: flex-start; max-width: 100%; overflow: hidden;">
+                                    <div class="input-field" style="flex-basis: 100%; padding: 0%; margin-left: auto; margin-right: auto;">
+                                        <label for="strength_score strength_modifier" style="font-size: 9px; width: 100%; margin: 0px; padding: 0px; padding-top: 5px; padding-bottom: 7px; margin-left: auto; margin-right: auto; text-align: center;">STRENGTH</label>
+                                        <input type="text" id="strength_score" name="strength_score" style="width: 60%; height: 30px; margin: 0px; padding: 0px; margin-left: auto; margin-right: auto; font-size: 25px; text-align: center; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                        <input type="text" id="strength_modifier" name="strength_modifier" style="width: 100%;  height: 23px; width: 30px; border-radius: 40px; margin: 0px; padding: 0px; margin-top: 7px; margin-left: auto; margin-right: auto; font-size: 13px; text-align: center;">
+                                    </div>
                                 </div>
-                                <div class="boxed-container" class="ability_score" id="DEX_box">
-
+                                <div class="boxed-container ability_score" id="DEX_box" style="display: flex; flex-direction: column; align-items: flex-start; max-width: 100%; overflow: hidden;">
+                                    <div class="input-field" style="flex-basis: 100%; padding: 0%; margin: 0%; margin-left: auto; margin-right: auto;">
+                                        <label for="dexterity_score dexterity_modifier" style="font-size: 9px; width: 100%; margin: 0px; padding: 0px; padding-top: 5px; padding-bottom: 7px; margin-left: auto; margin-right: auto; text-align: center;">DEXTERITY</label>
+                                        <input type="text" id="dexterity_score" name="dexterity_score" style="width: 60%; height: 30px; margin: 0px; padding: 0px; margin-left: auto; margin-right: auto; font-size: 25px; text-align: center; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                        <input type="text" id="dexterity_modifier" name="dexterity_modifier" style="width: 100%;  height: 23px; width: 30px; border-radius: 40px; margin: 0px; padding: 0px; margin-top: 7px; margin-left: auto; margin-right: auto; font-size: 13px; text-align: center;">
+                                    </div>
                                 </div>
-                                <div class="boxed-container" class="ability_score" id="CON_box">
-                                    
+                                <div class="boxed-container ability_score" id="CON_box" style="display: flex; flex-direction: column; align-items: flex-start; max-width: 100%; overflow: hidden;">
+                                    <div class="input-field" style="flex-basis: 100%; padding: 0%; margin: 0%; margin-left: auto; margin-right: auto;">
+                                        <label for="constitution_score constitution_modifier" style="font-size: 9px; width: 100%; margin: 0px; padding: 0px; padding-top: 5px; padding-bottom: 7px; margin-left: auto; margin-right: auto; text-align: center;">CONSTITUTION</label>
+                                        <input type="text" id="constitution_score" name="constitution_score" style="width: 60%; height: 30px; margin: 0px; padding: 0px; margin-left: auto; margin-right: auto; font-size: 25px; text-align: center; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                        <input type="text" id="constitution_modifier" name="constitution_modifier" style="width: 100%;  height: 23px; width: 30px; border-radius: 40px; margin: 0px; padding: 0px; margin-top: 7px; margin-left: auto; margin-right: auto; font-size: 13px; text-align: center;">
+                                    </div>
                                 </div>
-                                <div class="boxed-container" class="ability_score" id="INT_box">
-
+                                <div class="boxed-container ability_score" id="INT_box" style="display: flex; flex-direction: column; align-items: flex-start; max-width: 100%; overflow: hidden;">
+                                    <div class="input-field" style="flex-basis: 100%; padding: 0%; margin: 0%; margin-left: auto; margin-right: auto;">
+                                        <label for="intelligence_score intelligence_modifier" style="font-size: 9px; width: 100%; margin: 0px; padding: 0px; padding-top: 5px; padding-bottom: 7px; margin-left: auto; margin-right: auto; text-align: center;">INTELLIGENCE</label>
+                                        <input type="text" id="intelligence_score" name="intelligence_score" style="width: 60%; height: 30px; margin: 0px; padding: 0px; margin-left: auto; margin-right: auto; font-size: 25px; text-align: center; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                        <input type="text" id="intelligence_modifier" name="intelligence_modifier" style="width: 100%;  height: 23px; width: 30px; border-radius: 40px; margin: 0px; padding: 0px; margin-top: 7px; margin-left: auto; margin-right: auto; font-size: 13px; text-align: center;">
+                                    </div>
                                 </div>
-                                <div class="boxed-container" class="ability_score" id="WIS_box">
-
+                                <div class="boxed-container ability_score" id="WIS_box" style="display: flex; flex-direction: column; align-items: flex-start; max-width: 100%; overflow: hidden;">
+                                    <div class="input-field" style="flex-basis: 100%; padding: 0%; margin: 0%; margin-left: auto; margin-right: auto;">
+                                        <label for="wisdom_score wisdom_modifier" style="font-size: 9px; width: 100%; margin: 0px; padding: 0px; padding-top: 5px; padding-bottom: 7px; margin-left: auto; margin-right: auto; text-align: center;">WISDOM</label>
+                                        <input type="text" id="wisdom_score" name="wisdom_score" style="width: 60%; height: 30px; margin: 0px; padding: 0px; margin-left: auto; margin-right: auto; font-size: 25px; text-align: center; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                        <input type="text" id="wisdom_modifier" name="wisdom_modifier" style="width: 100%;  height: 23px; width: 30px; border-radius: 40px; margin: 0px; padding: 0px; margin-top: 7px; margin-left: auto; margin-right: auto; font-size: 13px; text-align: center;">
+                                    </div>
                                 </div>
-                                <div class="boxed-container" class="ability_score" id="CHA_box">
-
+                                <div class="boxed-container ability_score" id="CHA_box" style="display: flex; flex-direction: column; align-items: flex-start; max-width: 100%; overflow: hidden;">
+                                    <div class="input-field" style="flex-basis: 100%; padding: 0%; margin: 0%; margin-left: auto; margin-right: auto;">
+                                        <label for="charisma_score charisma_modifier" style="font-size: 9px; width: 100%; margin: 0px; padding: 0px; padding-top: 5px; padding-bottom: 7px; margin-left: auto; margin-right: auto; text-align: center;">CHARISMA</label>
+                                        <input type="text" id="charisma_score" name="charisma_score" style="width: 60%; height: 30px; margin: 0px; padding: 0px; margin-left: auto; margin-right: auto; font-size: 25px; text-align: center; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                        <input type="text" id="charisma_modifier" name="charisma_modifier" style="width: 100%;  height: 23px; width: 30px; border-radius: 40px; margin: 0px; padding: 0px; margin-top: 7px; margin-left: auto; margin-right: auto; font-size: 13px; text-align: center;">
+                                    </div>
                                 </div>
                             </div>
                             
-                            <div class="framework-container" id="Inspiration_Column">
-                                <div class="boxed-container" id="Inspiration_box">
+                            <div class="framework-container" id="Inspiration_Column" style="max-width: 66%; overflow: hidden;">
+                                <div class="boxed-container" id="Inspiration_box" style="max-width: 100%; max-height: 4%; overflow: hidden;">
+                                    <div class="input-field" style="padding: 0%; margin: 0%; flex-direction: row; max-width: 100%; overflow: hidden;">
+                                        <input type="text" id="inspiration" name="inspiration" style="width: 20px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 2px; margin-left: 2px; text-align: center; ">
+                                        <label for="inspiration" style="font-size: 11px; margin-top: 8px; margin-bottom: 0px; margin-left: 36px;">INSPIRATION</label>
+                                    </div>
+                                </div>
+                                <div class="boxed-container" id="Proficiency_box" style="max-width: 100%; max-height: 4%; overflow: hidden;">
+                                    <div class="input-field" style="padding: 0%; margin: 0%; flex-direction: row; max-width: 100%; overflow: hidden;">
+                                        <input type="text" id="proficiency" name="proficiency" style="width: 20px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 2px; margin-left: 2px; text-align: center;">
+                                        <label for="proficiency" style="font-size: 11px; margin-top: 8px; margin-bottom: 0px; margin-left: 13px;">PROFICIENCY BONUS</label>
+                                    </div>
+                                </div>
+                                <div class="boxed-container" id="saving_throw_box" style="max-width: 100%; flex-direction: column;">
+                                    <div class="proficiency">
+                                        <input type="radio" id="strength-proficiency" class = "proficiency-button" name="strengthproficiency" value="button">
+                                        <input type="text" id="strength" class = "proficiency-score" name="strength" >
+                                        <label for="strength" class="proficiency-label">STRENGTH</label>
+                                    </div>
+                                    <div class="proficiency">
+                                        <input type="radio" id="dexterity-proficiency" class="proficiency-button" name="dexterityproficiency" value="button">
+                                        <input type="text" id="dexterity" class="proficiency-score" name="dexterity" >
+                                        <label for="dexterity" class="proficiency-label">DEXTERITY</label>
+                                    </div>
+                                    <div class="proficiency">
+                                        <input type="radio" id="constitution-proficiency" class="proficiency-button" name="constitutionproficiency" value="button">
+                                        <input type="text" id="constitution" class="proficiency-score" name="constitution" >
+                                        <label for="constitution" class="proficiency-label">CONSTITUTION</label>
+                                    </div>
+                                    <div class="proficiency">
+                                        <input type="radio" id="intelligence-proficiency" class="proficiency-button" name="intelligenceproficiency" value="button">
+                                        <input type="text" id="intelligence" class="proficiency-score" name="intelligence" >
+                                        <label for="intelligence" class="proficiency-label">INTELLIGENCE</label>
+                                    </div>
+                                    <div class="proficiency">
+                                        <input type="radio" id="wisdom-proficiency" class="proficiency-button" name="wisdomproficiency" value="button">
+                                        <input type="text" id="wisdom" class="proficiency-score" name="wisdom" >
+                                        <label for="wisdom" class="proficiency-label">WISDOM</label>
+                                    </div>
+                                    <div class="proficiency">
+                                        <input type="radio" id="charisma-proficiency" class="proficiency-button" name="charismaproficiency" value="button">
+                                        <input type="text" id="charisma" class="proficiency-score" name="charisma" >
+                                        <label for="charisma" class="proficiency-label">CHARISMA</label>
+                                    </div>
 
-                                </div>
-                                <div class="boxed-container" id="Proficiency_box">
-                                    
-                                </div>
-                                <div class="boxed-container" id="saving_throw_box">
-                                    
                                 </div>
                                 <div class="boxed-container" id="Skill_box">
                                     
