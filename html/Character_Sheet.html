@@ -292,10 +292,12 @@
                         </div>
                         <div class="framework-container" id="ability_lower_region">
                             <div class="boxed-container" id="Passive_wisdom_box">
-
+                                <input type="text" id="passive_wisdom" name="passive_wisdom" style="border-color: black; width: 20px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 4px; margin-left: 2px; text-align: center;">
+                                <label for="passive_wisdom" style="font-size: 10px; font-weight: bold; margin-bottom: 0px; margin-left: 13px; margin-right: 0px; white-space: nowrap;">PASSIVE WISDOM (PERCEPTION)</label>
                             </div>
                             <div class="boxed-container" id="other_proficiencies_box">
-
+                                <textarea id="other_proficiencies" name="other_proficiencies" style="width: 95%; height: 90%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px; margin-bottom: -7px;"></textarea>
+                                <label for="other_proficiencies" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 0px; margin-left: 13px;" >OTHER PROFICIENCIES & LANGUAGES</label>
                             </div>
                         </div>
 
@@ -304,46 +306,136 @@
                     
                     <div class="framework-container" id="Attack_column">
                         
-                        <div class="framework-container" id="hp_tracking_section">
+                        <div class="boxed-container" id="hp_tracking_section" style="padding-bottom: 0px !important;">
                             
                             <div class="framework-container" id="ac_row">
                                 <div class="boxed-container" id="ac_box">
-                            
+                                    <input type="text" id="ac" name="ac" style="width: 30px; text-align: center; height: 30px; font-size: 18px; border-radius: 5px; border: 1px solid black; padding: 5px; margin: 0px; padding-bottom: 0px; margin-bottom: 5px; margin-left: auto; margin-right: auto;"></textarea>
+                                    <label for="ac" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 0px; margin-left: 0px;"> ARMOR CLASS </label>
                                 </div>
                                 <div class="boxed-container" id="initiative_box">
-                            
+                                    <input type="text" id="initiative" name="initiative" style="width: 30px; text-align: center; height: 30px; font-size: 18px; border-radius: 5px; border: 1px solid black; padding: 5px; margin: 0px; padding-bottom: 0px; margin-bottom: 5px; margin-left: auto; margin-right: auto;"></textarea>
+                                    <label for="initiative" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 0px; margin-left: 0px;"> INITIATIVE </label>
                                 </div>
                                 <div class="boxed-container" id="speed_box">
-                            
+                                    <input type="text" id="speed" name="speed" style="width: 30px; text-align: center; height: 30px; font-size: 18px; border-radius: 5px; border: 1px solid black; padding: 5px; margin: 0px; padding-bottom: 0px; margin-bottom: 5px; margin-left: auto; margin-right: auto;"></textarea>
+                                    <label for="speed" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 0px; margin-left: 0px;"> SPEED </label>
                                 </div>
                             </div>
 
                             <div class="boxed-container" id="hp_box">
-                            
+                                <div style="display: flex; flex-direction: row; flex-basis: 20%;">
+                                    <label for="hp-max" style="width: auto; font-size: 11px; font-weight: bold; margin-top: 8px; margin-bottom: 0px; margin-left: -5px; margin-right: 5px; padding-left: 5px;">Hit Point Maximum</label>
+                                    <input type="text" id="hp-max" name="hp-max" style="width: 110px; height: 15px; margin: 0px; padding: 0px; margin-left: auto; margin-right: auto; margin-top: 4px; font-size: 12px; text-align: center; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                </div>
+                                <div style="display: flex; flex-direction: column; flex-basis: 80%;">
+                                    <input type="text" id="hp" name="hp" style="width: 90%; height: 30px; margin: 0px; padding: 0px; margin-left: auto; margin-right: auto; margin-top: 25px; font-size: 25px; text-align: center; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                    <label for="hp" style="width: 90%; text-align: center; font-size: 11px; font-weight: bold; margin-top: 8px; margin-bottom: 0px; margin-left: auto; margin-right: auto; padding-left: 0px;">CURRENT HIT POINTS</label>
+                                </div>
                             </div>
                             <div class="boxed-container" id="temp_hp_box">
-                            
+                                <div style="display: flex; flex-direction: column;">
+                                    <input type="text" id="temp-hp" name="temp-hp" style="width: 90%; height: 30px; margin: 0px; padding: 0px; margin-left: auto; margin-right: auto; margin-top: 35px; font-size: 25px; text-align: center; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                    <label for="temp-hp" style="width: 90%; text-align: center; font-size: 11px; font-weight: bold; margin-top: 8px; margin-bottom: 0px; margin-left: auto; margin-right: auto; padding-left: 0px;">TEMPORARY HIT POINTS</label>
+                                </div>
                             </div>
-                            <div class="framework-container" id="hit_dice_row">
+                            <div class="framework-container" id="hit_dice_row" style="margin-bottom: 2px !important;">
                                 <div class="boxed-container" id="hit_dice_box">
-                            
+                                    <div style="display: flex; flex-direction: row; flex-basis: 20%;">
+                                        <label for="total-hit-dice" style="width: auto; font-size: 11px; font-weight: bold; margin-top: 2px; margin-bottom: 0px; margin-left: -5px; margin-right: 5px; padding-left: 5px;">Total</label>
+                                        <input type="text" id="total-hit-dice" name="total-hit-dice" style="width: 50px; height: 15px; margin: 0px; padding: 0px; margin-left: auto; margin-right: auto; margin-top: 0px; font-size: 11px; text-align: center; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                    </div>
+                                    <div style="display: flex; flex-direction: column; flex-basis: 80%; margin: 0px; padding: 0px;">
+                                        <input type="text" id="hit-dice" name="hit-dice" style="width: 75px; height: 25px; margin: 0px; padding: 0px; margin-left: auto; margin-right: auto; margin-top: 10px; font-size: 16px; text-align: center; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                                        <label for="hit-dice" style="width: 50px; text-align: center; font-size: 9px; font-weight: bold; margin-top: 4px; margin-bottom: 0px; margin-left: auto; margin-right: auto; padding-left: 0px;">HIT DICE</label>
+                                    </div>
                                 </div>
                                 <div class="boxed-container" id="death_saves_box">
-                            
+                                    <div style="display: flex; flex-direction: row; padding-top: 10px;">
+                                        <label class="proficiency-label" style="font-size: 8px !important; margin: 0px !important; padding: 0px !important; width: auto !important; padding-right: 2px !important; padding-top: 3px !important;">SUCCESSES</label>
+                                        <input type="checkbox" id="success1" class="proficiency-button" name="success1" value="button" style="margin: 1px !important; padding: 0px !important;">
+                                        <input type="checkbox" id="success2" class="proficiency-button" name="success2" value="button" style="margin: 1px !important; padding: 0px !important;">
+                                        <input type="checkbox" id="success3" class="proficiency-button" name="success3" value="button" style="margin: 1px !important; padding: 0px !important;">
+                                    </div>
+                                    <div style="display: flex; flex-direction: row; padding-top: 5px;">
+                                        <label class="proficiency-label" style="font-size: 8px !important; margin: 0px !important; padding: 0px !important; width: auto !important; padding-right: 2px !important; padding-top: 3px !important;">SUCCESSES</label>
+                                        <input type="checkbox" id="failure1" class="proficiency-button" name="failure1" value="button" style="margin: 1px !important; padding: 0px !important;">
+                                        <input type="checkbox" id="failure2" class="proficiency-button" name="failure2" value="button" style="margin: 1px !important; padding: 0px !important;">
+                                        <input type="checkbox" id="failure3" class="proficiency-button" name="failure3" value="button" style="margin: 1px !important; padding: 0px !important;">
+                                    </div>
+
+
+                                    
+                                    <label style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 9px; margin-bottom: 0px;" >DEATH SAVES</label>
                                 </div>
                             </div>
                         </div>
 
                         <div class="boxed-container" id="attacks_box">
-                            
+                            <div style="display: flex; flex-direction: row; flex-basis: 35%;">
+                                <div style="display: flex; flex-direction: column; flex-basis: 40%; ">
+                                    <p style="font-size: 8px; margin: 0px; padding: 0px; padding-left: 3px;">  NAME</p>
+                                    <input type="text" id="attack_name_1" name="attack_name_1" style="width: 80px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 2px; margin-left: 0px; text-align: center; border: 1px solid black;">
+                                    <input type="text" id="attack_name_2" name="attack_name_2" style="width: 80px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 2px; margin-left: 0px; text-align: center; border: 1px solid black;">
+                                    <input type="text" id="attack_name_3" name="attack_name_3" style="width: 80px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 2px; margin-left: 0px; text-align: center; border: 1px solid black;">
+                                
+                                </div>
+                                <div style="display: flex; flex-direction: column; flex-basis: 20%;">
+                                    <p style="font-size: 8px; margin: 0px; padding: 0px;">ATK BONUS</p>
+                                    <input type="text" id="attack_bonus_1" name="attack_bonus_1" style="width: 30px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 2px; margin-left: 0px; text-align: center; border: 1px solid black;">
+                                    <input type="text" id="attack_bonus_2" name="attack_bonus_2" style="width: 30px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 2px; margin-left: 0px; text-align: center; border: 1px solid black;">
+                                    <input type="text" id="attack_bonus_3" name="attack_bonus_3" style="width: 30px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 2px; margin-left: 0px; text-align: center; border: 1px solid black;">
+                                
+                                </div>
+                                <div style="display: flex; flex-direction: column; flex-basis: 40%;">
+                                    <p style="font-size: 8px; margin: 0px; padding: 0px; padding-left: 3px;">DAMAGE/TYPE</p>
+                                    <input type="text" id="damage_type_1" name="damage_type_1" style="width: 80px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 2px; margin-left: 0px; text-align: center; border: 1px solid black;">
+                                    <input type="text" id="damage_type_2" name="damage_type_2" style="width: 80px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 2px; margin-left: 0px; text-align: center; border: 1px solid black;">
+                                    <input type="text" id="damage_type_3" name="damage_type_3" style="width: 80px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 2px; margin-left: 0px; text-align: center; border: 1px solid black;">
+                                
+                                </div>
+                            </div>
+                            <div style="flex-basis: 65%;">
+                                <textarea id="spellcasting" name="spellcasting" style="width: 95%; height: 85%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px !important; margin-bottom: 0px !important;"></textarea>
+                                <label for="spellcasting" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; padding-top: 0px !important; margin-left: 13px;" >ATTACKS & SPELLCASTING</label>
+                            </div>
                         </div>
-                        <div class="boxed-container" id="equipment_section">
+                        <div class="boxed-container" id="equipment_section" style=" padding-bottom: 0px !important; ">
                             
                             <div class="framework-container" id="money_box">
-                            
+
+                                <div style="display: flex; flex-direction: row; flex-basis: 15%;">
+                                    <label for="cp" style="width: 15px; font-size: 10px; font-weight: bold; margin-top: 8px; margin-bottom: 0px; margin-left: -5px; margin-right: 5px;">CP</label>
+                                    <input type="text" id="cp" name="cp" style="width: 30px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 2px; margin-left: 0px; text-align: center; border: 1px solid black;">
+                                </div>
+
+                                <div style="display: flex; flex-direction: row; flex-basis: 15%;">
+                                    <label for="sp" style="width: 15px; font-size: 10px; font-weight: bold; margin-top: 8px; margin-bottom: 0px; margin-left: -5px; margin-right: 5px;">SP</label>
+                                    <input type="text" id="sp" name="sp" style="width: 30px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 2px; margin-left: 0px; text-align: center; border: 1px solid black;">
+                                </div>
+
+                                <div style="display: flex; flex-direction: row; flex-basis: 15%;">
+                                    <label for="ep" style="width: 15px; font-size: 10px; font-weight: bold; margin-top: 8px; margin-bottom: 0px; margin-left: -5px; margin-right: 5px;">EP</label>
+                                    <input type="text" id="ep" name="ep" style="width: 30px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 2px; margin-left: 0px; text-align: center; border: 1px solid black;">
+                                </div>
+
+                                <div style="display: flex; flex-direction: row; flex-basis: 15%;">
+                                    <label for="gp" style="width: 15px; font-size: 10px; font-weight: bold; margin-top: 8px; margin-bottom: 0px; margin-left: -5px; margin-right: 5px;">GP</label>
+                                    <input type="text" id="gp" name="gp" style="width: 30px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 2px; margin-left: 0px; text-align: center; border: 1px solid black;">
+                                </div>
+
+                                <div style="display: flex; flex-direction: row; flex-basis: 15%;">
+                                    <label for="pp" style="width: 15px; font-size: 10px; font-weight: bold; margin-top: 8px; margin-bottom: 0px; margin-left: -5px; margin-right: 5px;">PP</label>
+                                    <input type="text" id="pp" name="pp" style="width: 30px; border-radius: 40px; height: 12px; margin-bottom: 0px; margin-top: 2px; margin-left: 0px; text-align: center; border: 1px solid black;">
+                                </div>
+
+                                <div style="display: flex; flex-direction: row; flex-basis: 25%;">
+                                </div>
+
                             </div>
-                            <div class="framework-container" id="equipment_box">
-                            
+                            <div class="framework-container" id="equipment_box" style="margin-bottom: 0px !important; padding-bottom: 0px !important; ">
+                                <textarea id="equipment" name="equpiment" style="width: 95%; height: 96%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 2px; margin-bottom: 2px !important;"></textarea>
+                                <label for="equipment" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 0px !important; margin-left: 0px; padding-bottom: 3px !important; " >EQUIPMENT</label>
                             </div>
                         </div>
                     
@@ -353,19 +445,24 @@
                     <div class="framework-container" id="Features_column">
 
                         <div class="boxed-container" id="personality_box">
-                            
+                            <textarea id="personality_traits" name="personality_traits" style="width: 95%; height: 85%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px; margin-bottom: 2px;"></textarea>
+                                <label for="personality_traits" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 0px; margin-left: 13px;" >PERSONALITY TRAITS</label>
                         </div>
                         <div class="boxed-container" id="ideals_box">
-                            
+                            <textarea id="ideals" name="ideals" style="width: 95%; height: 85%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px; margin-bottom: 2px;"></textarea>
+                                <label for="ideals" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 0px; margin-left: 13px;" >IDEALS</label>
                         </div>
                         <div class="boxed-container" id="bonds_box">
-                            
+                            <textarea id="bonds" name="bonds" style="width: 95%; height: 85%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px; margin-bottom: 2px;"></textarea>
+                                <label for="bonds" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 0px; margin-left: 13px;" >BONDS</label>
                         </div>
                         <div class="boxed-container" id="flaws_box">
-                            
+                            <textarea id="flaws" name="flaws" style="width: 95%; height: 85%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px; margin-bottom: 2px;"></textarea>
+                                <label for="flaws" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 0px; margin-left: 13px;" >FLAWS</label>
                         </div>
                         <div class="boxed-container" id="features_box">
-                            
+                            <textarea id="features" name="features" style="width: 95%; height: 98%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px; margin-bottom: 2px;"></textarea>
+                                <label for="features" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 0px; margin-left: 13px;" >FEATURES & TRAITS</label>
                         </div>
                     </div>
 
