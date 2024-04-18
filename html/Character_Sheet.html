@@ -7,14 +7,49 @@
     <link rel="stylesheet" href="../css/Character_Sheet.css">
 </head>
 <body>
-    <!-- INITIATIVE-->
-    <div class="floating-container">
-        <div class="floating-header">
-            Initiative
+    <!-- Floating Elements-->
+    <div class="Floating-Global">
+        <div class="floating-container1">
+            <div class="floating-header1">
+                <b>Initiative</b>
+            </div>
+            <span class="minimize-button1">&lt</span>
+            <div class="floating-content1">
+                <h3>TODO: Add an initiative tracker</h3>
+            </div>
         </div>
-        <span class="minimize-button">&lt</span>
-        <div class="floating-content">
-            This is your floating content.
+
+        <div class="floating-container2">
+            <div class="floating-header2">
+                <b>Utilities</b>
+            </div>
+            <span class="minimize-button2">&lt</span>
+            <div class="floating-content2">
+
+
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'Tab1')" id="defaultOpen">Chat</button>
+                    <button class="tablinks" onclick="openTab(event, 'Tab2')">Rolls</button>
+                    <button class="tablinks" onclick="openTab(event, 'Tab3')">Other</button>
+                </div>
+                
+                <div id="Tab1" class="tabcontent" style="height: 34em;">
+                    <h3>TODO: Add a chat</h3>
+                    
+                </div>
+                
+                <div id="Tab2" class="tabcontent" style="height: 34em;">
+                    <h3>TODO: Add a Rolls section</h3>
+                    
+                </div>
+                
+                <div id="Tab3" class="tabcontent" style="height: 34em;">
+                    <h3>TODO: Add misc other settings</h3>
+                    
+                </div>
+
+
+            </div>
         </div>
     </div>
 
@@ -30,7 +65,7 @@
                         <h1 style="font-size: 1em; text-align: right; margin-right: 35px;">DUNGEONS & DRAGONS</h1>
                         <div class ="input-field">
                             <input type="text" id="character_name" name="character_name"style="width: 80%; margin-left: 10%; margin-right: 10%; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
-                            <label for="character_name" style="width: 70%; margin-left: 18%; margin-right: 12%;font-size: 11px;">CHARACHTER NAME</label>
+                            <label for="character_name" style="width: 70%; margin-left: 18%; margin-right: 12%;font-size: 11px;">CHARACTER NAME</label>
                         </div>
                     </div>
 
@@ -358,7 +393,7 @@
                                         <input type="checkbox" id="success3" class="proficiency-button" name="success3" value="button" style="margin: 1px !important; padding: 0px !important;">
                                     </div>
                                     <div style="display: flex; flex-direction: row; padding-top: 5px;">
-                                        <label class="proficiency-label" style="font-size: 8px !important; margin: 0px !important; padding: 0px !important; width: auto !important; padding-right: 2px !important; padding-top: 3px !important;">SUCCESSES</label>
+                                        <label class="proficiency-label" style="font-size: 8px !important; margin: 0px !important; padding: 0px !important; width: auto !important; padding-right: 2px !important; padding-top: 3px !important;">FAILIURES</label>
                                         <input type="checkbox" id="failure1" class="proficiency-button" name="failure1" value="button" style="margin: 1px !important; padding: 0px !important;">
                                         <input type="checkbox" id="failure2" class="proficiency-button" name="failure2" value="button" style="margin: 1px !important; padding: 0px !important;">
                                         <input type="checkbox" id="failure3" class="proficiency-button" name="failure3" value="button" style="margin: 1px !important; padding: 0px !important;">
@@ -473,32 +508,165 @@
             </div>
             
             <!-- Spells Page-->
-            <div class="sheet-container" id="spell list">
+            <div class="sheet-container" id="spell list" style="margin-bottom: 60px;">
+                <div class="framework-container" style="background-color: rgb(255, 255, 255); width: 100%; height: 100%; display: flex; flex-direction: column;">
+                    <div class="framework-container" style="background-color: rgb(255, 255, 255); width: 95%; height: 60px; display: flex; flex-direction: row; flex-basis: 5%; margin-top: 20px; margin-bottom: 10px; margin-left: auto; margin-right: auto;">
 
+                        <div class="input-field" style="flex-basis: 40%; padding: 0%; margin: 0%; height: 45px;">
+                            <input type="text" id="spellcasting_class" name="spellcasting_class" style="width: 90%; height: 12px; margin-bottom: 0px; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                            <label for="spellcasting_class" style="font-size: 11px; margin-top: 3px;">SPELLCASTING CLASS</label>
+                        </div>
+                        
+                        <div class="input-field" style="flex-basis: 20%; padding: 0%; margin: 0%; height: 45px;">
+                            <input type="text" id="spellcasting_ability" name="spellcasting_ability" style="width: 87%; height: 12px; margin-bottom: 0px; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                            <label for="spellcasting_ability" style="font-size: 11px; margin-top: 3px;">SPELLCASTING ABILITY</label>
+                        </div>
+                        
+                        <div class="input-field" style="flex-basis: 20%; padding: 0%; margin: 0%; height: 45px;">
+                            <input type="text" id="spell_save_dc" name="spell_save_dc" style="width: 87%; height: 12px; margin-bottom: 0px; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                            <label for="spell_save_dc" style="font-size: 11px; margin-top: 3px;">SPELL SAVE DC</label>
+                        </div>
+                        
+                        <div class="input-field" style="flex-basis: 20%; padding: 0%; margin: 0%; height: 45px;">
+                            <input type="text" id="spell_attack_bonus" name="spell_attack_bonus" style="width: 87%; height: 12px; margin-bottom: 0px; border: none; border-bottom: 1px solid rgb(184, 184, 184); border-radius: 0; box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);">
+                            <label for="spell_attack_bonus" style="font-size: 11px; margin-top: 3px;">SPELL ATTACK BONUS</label>
+                        </div>
 
+                    </div>
+                    <div class="framework-container" style="background-color: rgb(255, 255, 255); width: 100%; height: 90%; display: flex; flex-direction: row; flex-basis: 90%;">
+                        <div class="framework-container" style="background-color: rgb(255, 255, 255); width: 100%; height: 100%; display: flex; flex-direction: column;"> 
+                            <div class="boxed-container" style="background-color: rgb(255, 255, 255); width: auto; height: 100%; display: flex; flex-direction: column; flex-basis: 30% !important; margin: 10px;">
+                                <label for="cantrips" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 5px; margin-left: 13px;" >CANTRIPS</label>
+                                <textarea id="cantrips" name="cantrips" style="width: 95%; height: 90%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px; margin-bottom: 0px;"></textarea>
+                            </div>
+                            <div class="boxed-container" style="background-color: rgb(255, 255, 255); width: auto; height: 100%; display: flex; flex-direction: column; flex-basis: 35% !important; margin: 10px;">
+                                <label for="lv1spells" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 5px; margin-left: 13px;" >Level 1 Spells</label>
+                                <textarea id="lv1spells" name="lv1spells" style="width: 95%; height: 90%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px; margin-bottom: 0px;"></textarea>
+                            </div>
+                            <div class="boxed-container" style="background-color: rgb(255, 255, 255); width: auto; height: 100%; display: flex; flex-direction: column; flex-basis: 35% !important; margin: 10px;">
+                                <label for="lv2spells" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 5px; margin-left: 13px;" >Level 2 Spells</label>
+                                <textarea id="lv2spells" name="lv2spells" style="width: 95%; height: 90%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px; margin-bottom: 0px;"></textarea>
+                            
+                            </div>
+                        </div>
+                        <div class="framework-container" style="background-color: rgb(255, 255, 255); width: 100%; height: 100%; display: flex; flex-direction: column;"> 
+                            <div class="boxed-container" style="background-color: rgb(255, 255, 255); width: auto; height: 100%; display: flex; flex-direction: column; flex-basis: 35% !important; margin: 10px;">
+                                <label for="lv3spells" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 5px; margin-left: 13px;" >Level 3 Spells</label>
+                                <textarea id="lv3spells" name="lv3spells" style="width: 95%; height: 90%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px; margin-bottom: 0px;"></textarea>
+                            
+                            </div>
+                            <div class="boxed-container" style="background-color: rgb(255, 255, 255); width: auto; height: 100%; display: flex; flex-direction: column; flex-basis: 35% !important; margin: 10px;">
+                                <label for="lv4spells" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 5px; margin-left: 13px;" >Level 4 Spells</label>
+                                <textarea id="lv4spells" name="lv4spells" style="width: 95%; height: 90%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px; margin-bottom: 0px;"></textarea>
+                            
+                            </div>
+                            <div class="boxed-container" style="background-color: rgb(255, 255, 255); width: auto; height: 100%; display: flex; flex-direction: column; flex-basis: 30% !important; margin: 10px;">
+                                <label for="lv5spells" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 5px; margin-left: 13px;" >Level 5 Spells</label>
+                                <textarea id="lv5spells" name="lv5spells" style="width: 95%; height: 90%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px; margin-bottom: 0px;"></textarea>
+                            
+                            </div>
+                        </div>
+                        <div class="framework-container" style="background-color: rgb(255, 255, 255); width: 100%; height: 100%; display: flex; flex-direction: column;"> 
+                            <div class="boxed-container" style="background-color: rgb(255, 255, 255); width: auto; height: 100%; display: flex; flex-direction: column; flex-basis: 30% !important; margin: 10px;">
+                                <label for="lv6spells" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 5px; margin-left: 13px;" >Level 6 Spells</label>
+                                <textarea id="lv6spells" name="lv6spells" style="width: 95%; height: 90%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px; margin-bottom: 0px;"></textarea>
+                            
+                            </div>
+                            <div class="boxed-container" style="background-color: rgb(255, 255, 255); width: auto; height: 100%; display: flex; flex-direction: column; flex-basis: 30% !important; margin: 10px;">
+                                <label for="lv7spells" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 5px; margin-left: 13px;" >Level 7 Spells</label>
+                                <textarea id="lv7spells" name="lv7spells" style="width: 95%; height: 90%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px; margin-bottom: 0px;"></textarea>
+                            
+                            </div>
+                            <div class="boxed-container" style="background-color: rgb(255, 255, 255); width: auto; height: 100%; display: flex; flex-direction: column; flex-basis: 20% !important; margin: 10px;">
+                                <label for="lv8spells" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 5px; margin-left: 13px;" >Level 8 Spells</label>
+                                <textarea id="lv8spells" name="lv8spells" style="width: 95%; height: 90%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px; margin-bottom: 0px;"></textarea>
+                            
+                            </div>
+                            <div class="boxed-container" style="background-color: rgb(255, 255, 255); width: auto; height: 100%; display: flex; flex-direction: column; flex-basis: 20% !important; margin: 10px;">
+                                <label for="lv9spells" style="width: 95%; text-align: center; font-size: 10px; font-weight: bold; margin-top: 0px; margin-bottom: 5px; margin-left: 13px;" >Level 9 Spells</label>
+                                <textarea id="lv9spells" name="lv9spells" style="width: 95%; height: 90%; border-radius: 5px; border: 1px solid black; padding: 5px; padding-bottom: 0px; margin-bottom: 0px;"></textarea>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </form>
     
     <script>
-        // JavaScript code to handle minimize/maximize init tracker functionality
-        const floatingContainer = document.querySelector('.floating-container');
-        const floatingHeader = document.querySelector('.floating-header');
-        const floatingContent = document.querySelector('.floating-content');
-        const minimizeButton = document.querySelector('.minimize-button');
 
-        minimizeButton.addEventListener('click', () => {
-            floatingContainer.classList.toggle('minimized');
-            floatingHeader.classList.toggle('minimized');
-            floatingContent.classList.toggle('minimized');
-            if (minimizeButton.textContent == '<') {
-                minimizeButton.textContent = '>';
+        // JavaScript code to handle minimize/maximize init tracker functionality
+        const floatingContainer1 = document.querySelector('.floating-container1');
+        const floatingHeader1 = document.querySelector('.floating-header1');
+        const floatingContent1 = document.querySelector('.floating-content1');
+        const minimizeButton1 = document.querySelector('.minimize-button1');
+
+        // Function to toggle minimize/maximize
+        const toggleMinimize1 = () => {
+            floatingContainer1.classList.toggle('minimized');
+            floatingHeader1.classList.toggle('minimized');
+            floatingContent1.classList.toggle('minimized');
+            if (minimizeButton1.textContent == '<') {
+                minimizeButton1.textContent = '>';
             } else {
-                minimizeButton.textContent = '<';
+                minimizeButton1.textContent = '<';
             }
+        };
+
+        minimizeButton1.addEventListener('click', toggleMinimize1);
+
+
+
+        // JavaScript code to handle minimize/maximize init tracker functionality
+        const floatingContainer2 = document.querySelector('.floating-container2');
+        const floatingHeader2 = document.querySelector('.floating-header2');
+        const floatingContent2 = document.querySelector('.floating-content2');
+        const minimizeButton2 = document.querySelector('.minimize-button2');
+
+        // Function to toggle minimize/maximize
+        const toggleMinimize2 = () => {
+            floatingContainer2.classList.toggle('minimized');
+            floatingHeader2.classList.toggle('minimized');
+            floatingContent2.classList.toggle('minimized');
+            if (minimizeButton2.textContent == '<') {
+                minimizeButton2.textContent = '>';
+            } else {
+                minimizeButton2.textContent = '<';
+            }
+        };
+
+        minimizeButton2.addEventListener('click', toggleMinimize2);
+
+        
+
+        // Onload
+        document.addEventListener('DOMContentLoaded', () => {
+            toggleMinimize1();
+            toggleMinimize2();
         });
 
 
+        function openTab(evt, tabName) {
+        // Get all elements with class="tabcontent" and hide them
+        var tabcontent = document.getElementsByClassName("tabcontent");
+        for (var i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        
+        // Get all elements with class="tablinks" and remove the class "active"
+        var tablinks = document.getElementsByClassName("tablinks");
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
 
     </script>
 </body>

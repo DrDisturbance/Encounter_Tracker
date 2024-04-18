@@ -1,5 +1,57 @@
 /* CSS for D&D 5e Character Sheet */
 
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    border-width: 0px;
+    box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.4);
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    display: inline-block; /* Change from float: left */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 2px 16px;
+    transition: 0.3s;
+    height: 20px;
+    color: #000000;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 0px solid #ccc;
+    border-top: none;
+}
+
+/* Display tab content when tab button is clicked */
+.tabcontent.show {
+    display: block;
+}
+
+
+
+
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0; /* Grey background */
@@ -75,12 +127,12 @@ button:hover {
 
 
 
-.floating-container {
-    position: fixed;
+.floating-container1 {
+    position: relative;
     top: 20px; /* Adjust as needed */
     left: 20px; /* Adjust as needed */
     width: 20em; /* Adjust as needed */
-    height: 60em; /* Adjust as needed */
+    height: 30em; /* Adjust as needed */
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -88,34 +140,34 @@ button:hover {
     z-index: 9999; /* Ensure it's above other content */
 }
 
-.floating-container.minimized {
+.floating-container1.minimized {
     width: 2em; /* Shrinking the width to 2em */
     height: 2em;
     border-radius: 15px;
 }
 
 
-.floating-header {
+.floating-header1 {
     background-color: #f0f0f0;
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
 
-.floating-content {
+.floating-content1 {
     padding: 10px;
 }
 
-.floating-header.minimized {
+.floating-header1.minimized {
     background-color: #f0f0f0;
     display: none;
     border-bottom: 1px solid #ccc;
 }
 
-.floating-content.minimized {
+.floating-content1.minimized {
     display: none;
 }
 
-.minimize-button {
+.minimize-button1 {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -134,10 +186,78 @@ button:hover {
     
 }
 
-.minimize-button:hover {
+.minimize-button1:hover {
     background-color: #ddd; /* Lighter background color on hover */
 }
 
+.Floating-Global {
+    position: fixed;
+    z-index: 9999;
+}
+
+.floating-container2 {
+    position: relative;
+    margin-left: 1.25em;
+    margin-top: 2em;
+    
+    width: 20em; /* Adjust as needed */
+    height: 40em; /* Adjust as needed */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Ensure it's above other content */
+}
+
+.floating-container2.minimized {
+    width: 2em; /* Shrinking the width to 2em */
+    height: 2em;
+    border-radius: 15px;
+}
+
+
+.floating-header2 {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.floating-content2 {
+    padding: 10px;
+}
+
+.floating-header2.minimized {
+    background-color: #f0f0f0;
+    display: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.floating-content2.minimized {
+    display: none;
+}
+
+.minimize-button2 {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    border-radius: 50%; /* Make it round */
+    background-color: #f0f0f0; /* Background color */
+    border: 1px solid #ccc;
+    text-align: center;
+    color:rgb(189, 189, 189);
+    font-weight:bold;
+    line-height: 120%; /* Vertically center text */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    
+}
+
+.minimize-button2:hover {
+    background-color: #ddd; /* Lighter background color on hover */
+}
 
 
 
